@@ -1,88 +1,4 @@
- /*
- // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
 
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
- .roboto-thin {
-        font-family: "Roboto", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-      }
-      
-      .roboto-light {
-        font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-      }
-      
-      .roboto-regular {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      
-      .roboto-medium {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-      }
-      
-      .roboto-bold {
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-      }
-      
-      .roboto-black {
-        font-family: "Roboto", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-      }
-      
-      .roboto-thin-italic {
-        font-family: "Roboto", sans-serif;
-        font-weight: 100;
-        font-style: italic;
-      }
-      
-      .roboto-light-italic {
-        font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        font-style: italic;
-      }
-      
-      .roboto-regular-italic {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: italic;
-      }
-      
-      .roboto-medium-italic {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-style: italic;
-      }
-      
-      .roboto-bold-italic {
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: italic;
-      }
-      
-      .roboto-black-italic {
-        font-family: "Roboto", sans-serif;
-        font-weight: 900;
-        font-style: italic;
-      }
-      
-}
-      */
 
       /*Normalización*/
       * {
@@ -142,7 +58,9 @@
         font-size: 35px;
         z-index: 101; /* Para que esté sobre el header*/
         cursor: pointer; /* Para que aparezca la manito para cuando ponga el cursor encima*/
-       }
+       display: none;
+      
+      }
       #menu-toggle{
         display: none; /* nunca quiero que se vea el checkbox*/
       }
@@ -226,6 +144,7 @@
         top: 40vh;
         padding: 0 3%;
         translate: translateY(-50%);
+        right: 0;
       }
       .icons i {
         display: block;
@@ -276,7 +195,7 @@
           font-size: 70%;
         }
          .icons {
-          display: none;
+          display: block;
          }
          .scroll-down{
           display: none;
@@ -324,11 +243,11 @@
           display: block;
           margin: 5px 0;
         }
-        #menu-toggle:checked + label.menu-icon-action + ul {
-          right: 0;
-          
-        }
 
+        .navlist.open{
+          right: 0;
+        }
+      
 
       }
 
