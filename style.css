@@ -103,13 +103,13 @@
         line-height: 1.9;
       }
       .hero-img img{
-        width: 600px;
+        width: 100px;
         margin: 0% 0 0 0%;
         height: auto;
         transition: all 5s linear; /*Esto hace que la transción sea lineal*/
       }
       .hero-img img:hover {
-        width: 750px;
+        width: 250px;
         opacity: 0.6;
       }
 
